@@ -1,0 +1,13 @@
+schema: '2.0'
+stages:
+  clean_dataset:
+    cmd: python .\src\data\clean_dataset.py .\data\raw\movie_reviews.csv
+    deps:
+    - path: .\data\raw\movie_reviews.csv
+      hash: md5
+      md5: 6efb5da809df99140316dd09dbb42078
+      size: 52724248
+    - path: .\src\data\clean_dataset.py
+      hash: md5
+      md5: 43a97f2fe89d83064365d42bd81609e3
+      size: 1192

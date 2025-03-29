@@ -1,0 +1,6 @@
+stages:
+  clean_dataset:
+    cmd: python .\src\data\clean_dataset.py .\data\raw\movie_reviews.csv
+    deps:
+    - .\data\raw\movie_reviews.csv
+    - .\src\data\clean_dataset.py
